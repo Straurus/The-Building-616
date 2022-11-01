@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/i_see_you_voice.mp3-0c4d37aed92a4e67aae194b8d649dc1a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/i_see_you_voice.mp3"
+dest_files=[ "res://.import/i_see_you_voice.mp3-0c4d37aed92a4e67aae194b8d649dc1a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

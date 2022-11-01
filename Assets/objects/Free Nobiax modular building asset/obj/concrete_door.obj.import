@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/concrete_door.obj-299c0be1b9e10349cab34cbe00629c52.mesh"
+
+[deps]
+
+files=[ "res://.import/concrete_door.obj-299c0be1b9e10349cab34cbe00629c52.mesh" ]
+
+source_file="res://Assets/objects/Free Nobiax modular building asset/obj/concrete_door.obj"
+dest_files=[ "res://.import/concrete_door.obj-299c0be1b9e10349cab34cbe00629c52.mesh", "res://.import/concrete_door.obj-299c0be1b9e10349cab34cbe00629c52.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wall_brick_2.obj-740e46974481d289b1b79ca41669f0ad.mesh"
+
+[deps]
+
+files=[ "res://.import/wall_brick_2.obj-740e46974481d289b1b79ca41669f0ad.mesh" ]
+
+source_file="res://Assets/objects/Free Nobiax modular building asset/obj/wall_brick_2.obj"
+dest_files=[ "res://.import/wall_brick_2.obj-740e46974481d289b1b79ca41669f0ad.mesh", "res://.import/wall_brick_2.obj-740e46974481d289b1b79ca41669f0ad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

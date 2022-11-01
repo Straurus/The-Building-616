@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wall_concrete_5.obj-61f65a15f5948e274367594d40dc1046.mesh"
+
+[deps]
+
+files=[ "res://.import/wall_concrete_5.obj-61f65a15f5948e274367594d40dc1046.mesh" ]
+
+source_file="res://Assets/objects/Free Nobiax modular building asset/obj/wall_concrete_5.obj"
+dest_files=[ "res://.import/wall_concrete_5.obj-61f65a15f5948e274367594d40dc1046.mesh", "res://.import/wall_concrete_5.obj-61f65a15f5948e274367594d40dc1046.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

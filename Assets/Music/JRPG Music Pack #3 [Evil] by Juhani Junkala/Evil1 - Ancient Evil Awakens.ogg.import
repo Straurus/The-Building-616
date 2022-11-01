@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Evil1 - Ancient Evil Awakens.ogg-18ee7cb824df22389e518c95d2003a7d.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil1 - Ancient Evil Awakens.ogg"
+dest_files=[ "res://.import/Evil1 - Ancient Evil Awakens.ogg-18ee7cb824df22389e518c95d2003a7d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

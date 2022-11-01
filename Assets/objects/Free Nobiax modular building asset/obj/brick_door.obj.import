@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/brick_door.obj-8372112f7d9c78968546c1be0c74e72e.mesh"
+
+[deps]
+
+files=[ "res://.import/brick_door.obj-8372112f7d9c78968546c1be0c74e72e.mesh" ]
+
+source_file="res://Assets/objects/Free Nobiax modular building asset/obj/brick_door.obj"
+dest_files=[ "res://.import/brick_door.obj-8372112f7d9c78968546c1be0c74e72e.mesh", "res://.import/brick_door.obj-8372112f7d9c78968546c1be0c74e72e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

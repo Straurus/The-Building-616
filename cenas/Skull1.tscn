@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/texture/skull texture/skull.tres" type="Material" id=1]
+[ext_resource path="res://Assets/objects/skull/obj/skull.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.244461, 0.318643, 0.388067 )
+
+[node name="Skull1" type="Spatial"]
+
+[node name="skull" type="RigidBody" parent="."]
+
+[node name="skull" type="MeshInstance" parent="skull"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../../Player/lowpolyguyone")
+material/0 = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="skull"]
+shape = SubResource( 1 )

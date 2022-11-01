@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Evil4 - Witch's Lair.ogg-d9a2d76bf24006876133ccfe8fde59e4.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil4 - Witch's Lair.ogg"
+dest_files=[ "res://.import/Evil4 - Witch's Lair.ogg-d9a2d76bf24006876133ccfe8fde59e4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

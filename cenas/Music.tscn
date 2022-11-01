@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil1 - Ancient Evil Awakens.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Music/Unsolved-Investigation-isaiah658.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Music/CrEEP.wav" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil2 - Catacombs.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil3 - Apocalypse.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil5 - Whispers From Beyond.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil4 - Witch's Lair.ogg" type="AudioStream" id=8]
+[ext_resource path="res://scripts/Global.gd" type="Script" id=9]
+
+[node name="Music" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+
+[node name="Unsolved_Investigation" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+mix_target = 1
+
+[node name="CrEEP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+mix_target = 1
+
+[node name="i_see_you" type="AudioStreamPlayer" parent="."]
+mix_target = 1
+
+[node name="Evil1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+mix_target = 1
+
+[node name="Evil2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+mix_target = 1
+
+[node name="Evil3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+mix_target = 1
+
+[node name="Evil4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+mix_target = 1
+
+[node name="Evil5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+mix_target = 1

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/concrete_small_double_window.obj-fb0eb60489111e8b44757a0d48996653.mesh"
+
+[deps]
+
+files=[ "res://.import/concrete_small_double_window.obj-fb0eb60489111e8b44757a0d48996653.mesh" ]
+
+source_file="res://Assets/objects/Free Nobiax modular building asset/obj/concrete_small_double_window.obj"
+dest_files=[ "res://.import/concrete_small_double_window.obj-fb0eb60489111e8b44757a0d48996653.mesh", "res://.import/concrete_small_double_window.obj-fb0eb60489111e8b44757a0d48996653.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

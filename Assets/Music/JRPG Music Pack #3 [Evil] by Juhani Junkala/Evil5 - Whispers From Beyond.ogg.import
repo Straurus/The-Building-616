@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Evil5 - Whispers From Beyond.ogg-6d135ffde534f1250ada415ad6bdb618.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil5 - Whispers From Beyond.ogg"
+dest_files=[ "res://.import/Evil5 - Whispers From Beyond.ogg-6d135ffde534f1250ada415ad6bdb618.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

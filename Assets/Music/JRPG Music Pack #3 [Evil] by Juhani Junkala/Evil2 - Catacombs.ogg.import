@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Evil2 - Catacombs.ogg-75df79f050b7f9b47e08337b5291662a.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/JRPG Music Pack #3 [Evil] by Juhani Junkala/Evil2 - Catacombs.ogg"
+dest_files=[ "res://.import/Evil2 - Catacombs.ogg-75df79f050b7f9b47e08337b5291662a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
