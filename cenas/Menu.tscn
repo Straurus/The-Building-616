@@ -20,32 +20,34 @@ margin_right = -0.0421143
 margin_bottom = -0.197021
 
 [node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer"]
-margin_left = 485.0
-margin_top = 267.0
-margin_right = 536.0
-margin_bottom = 331.0
+margin_left = 443.0
+margin_top = 263.0
+margin_right = 579.0
+margin_bottom = 335.0
 
 [node name="VSplitContainer" type="VSplitContainer" parent="Panel/CenterContainer/GridContainer"]
-margin_right = 51.0
+margin_right = 136.0
 
 [node name="Label" type="Label" parent="Panel/CenterContainer/GridContainer"]
 margin_top = 4.0
-margin_right = 51.0
+margin_right = 136.0
 margin_bottom = 18.0
+text = "The Building 616"
 
 [node name="Label2" type="Label" parent="Panel/CenterContainer/GridContainer"]
 margin_top = 22.0
-margin_right = 51.0
+margin_right = 136.0
 margin_bottom = 36.0
+text = "by Lucas G. Dieterich"
 
 [node name="VSplitContainer2" type="VSplitContainer" parent="Panel/CenterContainer/GridContainer"]
 margin_top = 40.0
-margin_right = 51.0
+margin_right = 136.0
 margin_bottom = 40.0
 
 [node name="Button" type="Button" parent="Panel/CenterContainer/GridContainer"]
 margin_top = 44.0
-margin_right = 51.0
+margin_right = 136.0
 margin_bottom = 64.0
 text = "iniciar"
 
@@ -54,5 +56,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 3.0
 margin_bottom = 1.0
+
+[node name="VSplitContainer3" type="VSplitContainer" parent="Panel/CenterContainer/GridContainer"]
+margin_top = 68.0
+margin_right = 136.0
+margin_bottom = 68.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CenterContainer/GridContainer"]
+margin_top = 72.0
+margin_right = 136.0
+margin_bottom = 72.0
+tab_size = 5
+text = "Tu é um investigador que precisa descobrir o sumiço de umas pessoas em um prédio"
 
 [connection signal="pressed" from="Panel/CenterContainer/GridContainer/Button" to="." method="_on_Button_pressed"]

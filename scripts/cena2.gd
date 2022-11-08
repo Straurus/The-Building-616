@@ -59,7 +59,8 @@ func positionPlayer():
 	pass
 
 func _on_Area_body_entered(body):
-	Global.location=0
+	Global.location=1
+	Global.lastLocation=1
 	Global.rotationPlayer=0
 	Global.positionPlayer=1
 	get_tree().change_scene("res://cenas/cena1.tscn")
@@ -70,7 +71,7 @@ func _on_Area_body_entered2(body):
 	Global.location=2
 	Global.rotationPlayer=180
 	get_tree().change_scene("res://cenas/cena3.tscn")
-	print("1")
+	#print("1")
 	pass # Replace with function body.
 
 func _on_Area_body_entered3(body):
@@ -93,7 +94,10 @@ func _on_Area_body_entered5(body):
 	Global.positionPlayer=5
 	Global.location=5
 	Global.rotationPlayer=180
-	get_tree().change_scene("res://cenas/cena3.tscn")
+	#key blue
+	if Global.keyYellow==true:
+		Global.rotationPlayer=180
+		get_tree().change_scene("res://cenas/cena3.tscn")
 	pass # Replace with function body.
 
 func _on_Area_body_entered6(body):
@@ -130,10 +134,7 @@ func _on_Area_body_entered9(body):
 func _on_Area_body_entered10(body):
 	Global.positionPlayer=10
 	Global.location=10
-	#key blue
-	if Global.keyYellow==true:
-		Global.rotationPlayer=180
-		get_tree().change_scene("res://cenas/cena3.tscn")
+	get_tree().change_scene("res://cenas/cena3.tscn")
 	pass # Replace with function body.
 
 func _on_Area_body_entered11(body):

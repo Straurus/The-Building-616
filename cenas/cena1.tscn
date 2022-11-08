@@ -44,7 +44,7 @@ script = ExtResource( 19 )
 [node name="enviroment" parent="." instance=ExtResource( 6 )]
 
 [node name="Player" type="KinematicBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17866, 0, -4.19708 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.179, 0, -4.197 )
 collision_layer = 3
 collision_mask = 3
 script = ExtResource( 5 )
@@ -255,6 +255,12 @@ material/0 = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0670021, 5.03725, -0.252768 )
 omni_range = 100.0
 omni_shadow_mode = 0
+
+[node name="Position3D" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17866, 0, -4.19708 )
+
+[node name="Position3D2" type="Position3D" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.54166, 0, 4.23453 )
 
 [connection signal="body_entered" from="walls/wall1/hangar_door/Area" to="." method="_on_Area_body_entered2"]
 [connection signal="body_entered" from="walls/porta/Area" to="." method="_on_Area_body_entered"]

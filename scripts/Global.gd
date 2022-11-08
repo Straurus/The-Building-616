@@ -7,7 +7,7 @@ var locationPlayer
 var location=0
 var audio
 var save=false
-var lastLocation
+var lastLocation=0
 var translationPlayer
 var rotationPlayer=0
 var lastRotationPlayer=0

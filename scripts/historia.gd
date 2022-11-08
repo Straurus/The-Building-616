@@ -17,13 +17,5 @@ func _ready():
 
 
 func _on_Button_pressed():
-	Player.health=20
-	Global.key=false
-	Global.keyOga=false
-	Global.keyBlue=false
-	Global.keyRed=false
-	Global.keyYellow=false
-	Global.lastLocation=0
-	Global.location=0
-	get_tree().change_scene("res://cenas/historia.tscn")
+	get_tree().change_scene("res://cenas/cena1.tscn")
 	pass # Replace with function body.

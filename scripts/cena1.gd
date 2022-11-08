@@ -8,6 +8,12 @@ extends Spatial
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_node("OmniLight").hide()
+	if Global.lastLocation==1:
+		get_node("Player").translation=get_node("Position3D2").translation
+		get_node("Player").rotation_degrees=get_node("Position3D2").rotation_degrees	
+	else:
+		get_node("Player").translation=get_node("Position3D").translation
+		get_node("Player").rotation_degrees=get_node("Position3D").rotation_degrees
 	pass # Replace with function body.
 	
 func _on_Area_body_entered(body):

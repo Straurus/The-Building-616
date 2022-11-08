@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Assets/objects/Free Nobiax modular building asset/boxshape.tres" type="Shape" id=1]
 [ext_resource path="res://Assets/texture/Free Nobiax modular building asset texture/building_materiais.tres" type="Material" id=2]
@@ -21,8 +21,43 @@ extents = Vector3( 5.21562, 0.0431383, 23.7977 )
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 1.72692, 1.25422, 0.174664 )
 
+[sub_resource type="SpatialMaterial" id=9]
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0, 0, 0, 1 )
+
 [sub_resource type="BoxShape" id=7]
 extents = Vector3( 1.27524, 1.25422, 0.174664 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0, 0, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 1, 0.639216, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 1, 1, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.74902, 0.168627, 0.278431, 1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 0.396078, 0, 0.545098, 1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.498039, 1, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 1, 0, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0, 1, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0, 1, 0, 1 )
 
 [node name="Corredor" type="Spatial"]
 script = ExtResource( 7 )
@@ -392,6 +427,13 @@ transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -2.54155, 0, 0 )
 mesh = ExtResource( 4 )
 material/0 = ExtResource( 2 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0289356, 1.82676, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 9 )
+
 [node name="porta2" type="StaticBody" parent="walls"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.116446, 0, -28.7191 )
 
@@ -422,6 +464,13 @@ transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -2.54155, 0, 0 )
 mesh = ExtResource( 4 )
 material/0 = ExtResource( 2 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0586949, 1.83697, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 10 )
+
 [node name="porta3" type="StaticBody" parent="walls"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02, 0, -25.199 )
 
@@ -443,6 +492,13 @@ collision_mask = 2
 [node name="CollisionShape" type="CollisionShape" parent="walls/porta3/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
+
+[node name="Plate door" type="CSGBox" parent="walls/porta3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00287628, 1.83479, -0.190341 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 11 )
 
 [node name="porta4" type="StaticBody" parent="walls"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02, 0, -15.154 )
@@ -466,6 +522,13 @@ collision_mask = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0957232, 1.82391, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 12 )
+
 [node name="porta5" type="StaticBody" parent="walls"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02, 0, -5.122 )
 
@@ -487,6 +550,13 @@ collision_mask = 2
 [node name="CollisionShape" type="CollisionShape" parent="walls/porta5/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
+
+[node name="Plate door" type="CSGBox" parent="walls/porta5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00269651, 1.81151, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 13 )
 
 [node name="porta6" type="StaticBody" parent="walls"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02, 0, 5.01222 )
@@ -510,6 +580,13 @@ collision_mask = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0438323, 1.83124, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 14 )
+
 [node name="porta7" type="StaticBody" parent="walls"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.02, 0, 14.977 )
 
@@ -531,6 +608,13 @@ collision_mask = 2
 [node name="CollisionShape" type="CollisionShape" parent="walls/porta7/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
+
+[node name="Plate door" type="CSGBox" parent="walls/porta7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0542002, 1.84338, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 15 )
 
 [node name="porta8" type="StaticBody" parent="walls"]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.75717, 0, -25.1991 )
@@ -554,6 +638,13 @@ collision_mask = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0225182, 1.85299, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 16 )
+
 [node name="porta9" type="StaticBody" parent="walls"]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.75717, 0, -15.216 )
 
@@ -575,6 +666,13 @@ collision_mask = 2
 [node name="CollisionShape" type="CollisionShape" parent="walls/porta9/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
+
+[node name="Plate door" type="CSGBox" parent="walls/porta9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0224342, 1.85172, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 17 )
 
 [node name="porta10" type="StaticBody" parent="walls"]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.75717, 0, -5.03853 )
@@ -598,6 +696,13 @@ collision_mask = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0447016, 1.84128, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 18 )
+
 [node name="porta11" type="StaticBody" parent="walls"]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.75717, 0, 4.93345 )
 
@@ -620,6 +725,13 @@ collision_mask = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
 
+[node name="Plate door" type="CSGBox" parent="walls/porta11"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021874, 1.84054, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 19 )
+
 [node name="porta12" type="StaticBody" parent="walls"]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.75717, 0, 15.1159 )
 
@@ -641,6 +753,13 @@ collision_mask = 2
 [node name="CollisionShape" type="CollisionShape" parent="walls/porta12/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.020741 )
 shape = ExtResource( 8 )
+
+[node name="Plate door" type="CSGBox" parent="walls/porta12"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0577583, 1.84921, -0.155018 )
+width = 0.25
+height = 0.125
+depth = 0.01
+material = SubResource( 8 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18.832 )

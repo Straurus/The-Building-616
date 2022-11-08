@@ -57,8 +57,8 @@ func Position():
 		get_node("deadBody").translation=get_node("deadBodyPosition2").translation
 		get_node("deadBody").rotation_degrees=get_node("deadBodyPosition2").rotation_degrees
 		pass
-	elif Global.location==5:
-		Global.positionPlayer=5
+	elif Global.location==10:
+		Global.positionPlayer=10
 		Global.lastRotationPlayer=-90
 		Global.menosLife()
 		get_node("Altar").translation=get_node("altarPosition2").translation
@@ -105,8 +105,8 @@ func Position():
 		get_node("deadBody").translation=get_node("deadBodyPositionNull").translation
 		get_node("deadBody").rotation_degrees=get_node("deadBodyPositionNull").rotation_degrees
 		pass
-	elif Global.location==10:
-		Global.positionPlayer=10
+	elif Global.location==5:
+		Global.positionPlayer=5
 		Global.lastRotationPlayerr=90
 		Global.menosLife()
 		Global.menosLife()
