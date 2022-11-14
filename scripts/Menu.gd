@@ -27,3 +27,8 @@ func _on_Button_pressed():
 	Global.location=0
 	get_tree().change_scene("res://cenas/historia.tscn")
 	pass # Replace with function body.
+
+func _on_CheckButton_toggled(button_pressed):
+	Global.song=button_pressed
+	Global.checkMusic()
+	pass # Replace with function body.

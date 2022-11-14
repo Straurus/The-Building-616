@@ -8,6 +8,7 @@ extends Spatial
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.checkMusic()
 	#Global.rotationPlayer=get_node("Player").rotation_degrees.y
 	Global.lastLocation=Global.location
 	positionPlayer()
@@ -93,7 +94,6 @@ func _on_Area_body_entered4(body):
 func _on_Area_body_entered5(body):
 	Global.positionPlayer=5
 	Global.location=5
-	Global.rotationPlayer=180
 	#key blue
 	if Global.keyYellow==true:
 		Global.rotationPlayer=180

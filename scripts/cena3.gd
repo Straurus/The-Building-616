@@ -9,7 +9,8 @@ extends Spatial
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_node("OmniLight").hide()
-	#Global.playMusic()
+	#Global.playSeeYou()
+	Global.checkMusic()
 	#Global.menosLife()
 	Global.rotationPlayer=180
 	#Global.rotationPlayer=get_node("Player").rotation_degrees.y
@@ -152,4 +153,13 @@ func _on_Area_body_entered(body):
 	pass # Replace with function body.
 
 
+	pass # Replace with function body.
+
+
+func _on_Area_body_entered_Audio(body):
+	Global.playSeeYou()
+	pass # Replace with function body.
+
+func _on_Area_body_exited_Audio(body):
+	Global.stopSeeYou()
 	pass # Replace with function body.

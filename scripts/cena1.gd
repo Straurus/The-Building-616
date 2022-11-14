@@ -7,6 +7,7 @@ extends Spatial
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.checkMusic()
 	get_node("OmniLight").hide()
 	if Global.lastLocation==1:
 		get_node("Player").translation=get_node("Position3D2").translation

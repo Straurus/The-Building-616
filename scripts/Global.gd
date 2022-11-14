@@ -24,7 +24,7 @@ var key=false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	selcMusic()
+	checkMusic()
 	pass # Replace with function body.
 
 
@@ -32,31 +32,34 @@ func _ready():
 func selcMusic():
 	if selMusic==0:
 		stopMusic()
-		audio=get_node("Unsolved_Investigation")
+		audio=Music.get_node("Unsolved_Investigation")
 	elif selMusic==1:
 		stopMusic()
-		audio=get_node("CrEEP")
+		audio=Music.get_node("CrEEP")
 	elif selMusic==2:
 		stopMusic()
-		audio=get_node("i_see_you")
+		audio=Music.get_node("i_see_you")
 	elif selMusic==3:
 		stopMusic()
-		audio=get_node("Evil1")
+		audio=Music.get_node("Evil1")
 	elif selMusic==4:
 		stopMusic()
-		audio=get_node("Evil2")
+		audio=Music.get_node("Evil2")
 	elif selMusic==5:
 		stopMusic()
-		audio=get_node("Evil3")
+		audio=Music.get_node("Evil3")
 	elif selMusic==6:
 		stopMusic()
-		audio=get_node("Evil4")
+		audio=Music.get_node("Evil4")
 	elif selMusic==7:
 		stopMusic()
-		audio=get_node("Evil5")
+		audio=Music.get_node("Evil5")
 
 func playMusic():
-	audio.play()
+	if audio==null:
+		pass
+	else:
+		audio.play()
 	
 func stopMusic():
 	if audio==null:
@@ -72,9 +75,9 @@ func checkMusic():
 		playMusic()
 		
 func playSeeYou():
-	get_node("i_see_you").play()
-	pass
-	get_node("i_see_you").stop()
+	Music.get_node("i_see_you").play()
+func stopSeeYou():
+	Music.get_node("i_see_you").stop()
 
 func menosLife():
 	 Player.health -= 1

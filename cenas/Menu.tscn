@@ -21,9 +21,9 @@ margin_bottom = -0.197021
 
 [node name="GridContainer" type="GridContainer" parent="Panel/CenterContainer"]
 margin_left = 443.0
-margin_top = 263.0
+margin_top = 243.0
 margin_right = 579.0
-margin_bottom = 335.0
+margin_bottom = 355.0
 
 [node name="VSplitContainer" type="VSplitContainer" parent="Panel/CenterContainer/GridContainer"]
 margin_right = 136.0
@@ -62,11 +62,11 @@ margin_top = 68.0
 margin_right = 136.0
 margin_bottom = 68.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CenterContainer/GridContainer"]
+[node name="CheckButton" type="CheckButton" parent="Panel/CenterContainer/GridContainer"]
 margin_top = 72.0
 margin_right = 136.0
-margin_bottom = 72.0
-tab_size = 5
-text = "Tu é um investigador que precisa descobrir o sumiço de umas pessoas em um prédio"
+margin_bottom = 112.0
+text = "Music"
 
 [connection signal="pressed" from="Panel/CenterContainer/GridContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="toggled" from="Panel/CenterContainer/GridContainer/CheckButton" to="." method="_on_CheckButton_toggled"]
